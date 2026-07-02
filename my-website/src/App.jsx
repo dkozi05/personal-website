@@ -1,14 +1,18 @@
-import Header from './components/Header.jsx'
-import Footer from './components/Footer.jsx'
-import Card from './components/Card.jsx'
+
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import HomePage from './pages/HomePage';
+import ProjectPage from './pages/ProjectPage'
 
 function App() {
   return(
-    <>
-    <Header></Header>
-    <Card/>
-    <Footer/>
-    </>
+
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage/>}/>
+        <Route path="/projects" element={<ProjectPage/>}/>
+      </Routes>
+    </Router>
+
   );
 }
 

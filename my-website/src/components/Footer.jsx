@@ -4,7 +4,8 @@ function Footer(){
     return(
 
         <footer>
-            <p>&copy; {new Date().getFullYear()} Dmitri Koziarz</p>
+            <hr></hr>
+            <p className="center-text">&copy; {new Date().getFullYear()} Dmitri Koziarz</p>
         </footer>
 
     );
